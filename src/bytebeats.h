@@ -14,5 +14,44 @@
 
 namespace Bytebeats
 {
-    
+    DWORD WINAPI Sound1(LPVOID lpvd);
+    DWORD WINAPI Sound2(LPVOID lpvd);
+    DWORD WINAPI Sound3(LPVOID lpvd);
+    DWORD WINAPI Sound4(LPVOID lpvd);
+    DWORD WINAPI Sound5(LPVOID lpvd);
+    DWORD WINAPI Sound6(LPVOID lpvd);
+    DWORD WINAPI Sound7(LPVOID lpvd);
+    DWORD WINAPI Sound8(LPVOID lpvd);
+    DWORD WINAPI Sound9(LPVOID lpvd);
+    DWORD WINAPI Sound10(LPVOID lpvd);
+    DWORD WINAPI Sound11(LPVOID lpvd);
+    DWORD WINAPI Sound12(LPVOID lpvd);
+    DWORD WINAPI Sound13(LPVOID lpvd);
+    DWORD WINAPI Sound14(LPVOID lpvd);
+    DWORD WINAPI Sound15(LPVOID lpvd);
+    DWORD WINAPI Sound16(LPVOID lpvd);
+    DWORD WINAPI Sound17(LPVOID lpvd);
+    DWORD WINAPI Sound18(LPVOID lpvd);
+    DWORD WINAPI Sound19(LPVOID lpvd);
+    DWORD WINAPI Sound20(LPVOID lpvd);
+    DWORD WINAPI Sound21(LPVOID lpvd);
+    DWORD WINAPI Sound22(LPVOID lpvd);
+    DWORD WINAPI Sound23(LPVOID lpvd);
+    DWORD WINAPI Sound24(LPVOID lpvd);
+    DWORD WINAPI Sound25(LPVOID lpvd);
+    DWORD WINAPI Sound26(LPVOID lpvd);
+    DWORD WINAPI Sound27(LPVOID lpvd);
+    DWORD WINAPI Sound28(LPVOID lpvd);
+    DWORD WINAPI Sound29(LPVOID lpvd);
+    DWORD WINAPI Sound30(LPVOID lpvd);
+    DWORD WINAPI Sound31(LPVOID lpvd);
+    DWORD WINAPI Sound32(LPVOID lpvd);
+    DWORD WINAPI Sound33(LPVOID lpvd);
+    DWORD WINAPI Sound34(LPVOID lpvd);
+    DWORD WINAPI Sound35(LPVOID lpvd);
+    DWORD WINAPI Sound36(LPVOID lpvd);
+    DWORD WINAPI Sound37(LPVOID lpvd);
+    DWORD WINAPI Sound38(LPVOID lpvd);
+    DWORD WINAPI Sound39(LPVOID lpvd);
+    DWORD WINAPI Sound40(LPVOID lpvd);
 }
