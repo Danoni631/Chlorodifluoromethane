@@ -1,0 +1,149 @@
+#include "include.h"
+
+#define PI 3.14159265358979323846264338327950288
+
+int w = GetSystemMetrics(0);
+int h = GetSystemMetrics(1);
+
+typedef enum
+{
+	MEM_ALLOC_TYPES = MEM_COMMIT | MEM_RESERVE
+} MalwareDefs;
+
+namespace GDIShaders
+{
+    DWORD WINAPI GDIShader1(LPVOID lpParam);
+    DWORD WINAPI GDIShader2(LPVOID lpParam);
+    DWORD WINAPI GDIShader3(LPVOID lpParam);
+    DWORD WINAPI GDIShader4(LPVOID lpParam);
+    DWORD WINAPI GDIShader5(LPVOID lpParam);
+    DWORD WINAPI GDIShader6(LPVOID lpParam);
+    DWORD WINAPI GDIShader7(LPVOID lpParam);
+    DWORD WINAPI GDIShader8(LPVOID lpParam);
+    DWORD WINAPI GDIShader9(LPVOID lpParam);
+    DWORD WINAPI GDIShader10(LPVOID lpParam);
+    DWORD WINAPI GDIShader11(LPVOID lpParam);
+    DWORD WINAPI GDIShader12(LPVOID lpParam);
+    DWORD WINAPI GDIShader13(LPVOID lpParam);
+    DWORD WINAPI GDIShader14(LPVOID lpParam);
+    DWORD WINAPI GDIShader15(LPVOID lpParam);
+    DWORD WINAPI GDIShader16(LPVOID lpParam);
+    DWORD WINAPI GDIShader17(LPVOID lpParam);
+    DWORD WINAPI GDIShader18(LPVOID lpParam);
+    DWORD WINAPI GDIShader19(LPVOID lpParam);
+    DWORD WINAPI GDIShader20(LPVOID lpParam);
+    DWORD WINAPI GDIShader21(LPVOID lpParam);
+    DWORD WINAPI GDIShader22(LPVOID lpParam);
+    DWORD WINAPI GDIShader23(LPVOID lpParam);
+    DWORD WINAPI GDIShader24(LPVOID lpParam);
+    DWORD WINAPI GDIShader25(LPVOID lpParam);
+    DWORD WINAPI GDIShader26(LPVOID lpParam);
+    DWORD WINAPI GDIShader27(LPVOID lpParam);
+    DWORD WINAPI GDIShader28(LPVOID lpParam);
+    DWORD WINAPI GDIShader29(LPVOID lpParam);
+    DWORD WINAPI GDIShader30(LPVOID lpParam);
+    DWORD WINAPI GDIShader31(LPVOID lpParam);
+    DWORD WINAPI GDIShader32(LPVOID lpParam);
+    DWORD WINAPI GDIShader33(LPVOID lpParam);
+    DWORD WINAPI GDIShader34(LPVOID lpParam);
+    DWORD WINAPI GDIShader35(LPVOID lpParam);
+    DWORD WINAPI GDIShader36(LPVOID lpParam);
+    DWORD WINAPI GDIShader37(LPVOID lpParam);
+    DWORD WINAPI GDIShader38(LPVOID lpParam);
+    DWORD WINAPI GDIShader39(LPVOID lpParam);
+    DWORD WINAPI GDIShader40(LPVOID lpParam);
+    DWORD WINAPI GDIShader41(LPVOID lpParam);
+    DWORD WINAPI GDIShader42(LPVOID lpParam);
+    DWORD WINAPI GDIShader43(LPVOID lpParam);
+    DWORD WINAPI GDIShader44(LPVOID lpParam);
+    DWORD WINAPI GDIShader45(LPVOID lpParam);
+    DWORD WINAPI GDIShader46(LPVOID lpParam);
+    DWORD WINAPI GDIShader47(LPVOID lpParam);
+    DWORD WINAPI GDIShader48(LPVOID lpParam);
+    DWORD WINAPI GDIShader49(LPVOID lpParam);
+    DWORD WINAPI GDIShader50(LPVOID lpParam);
+    DWORD WINAPI GDIShader51(LPVOID lpParam);
+    DWORD WINAPI GDIShader52(LPVOID lpParam);
+    DWORD WINAPI GDIShader53(LPVOID lpParam);
+    DWORD WINAPI GDIShader54(LPVOID lpParam);
+    DWORD WINAPI GDIShader55(LPVOID lpParam);
+    DWORD WINAPI GDIShader56(LPVOID lpParam);
+    DWORD WINAPI GDIShader57(LPVOID lpParam);
+    DWORD WINAPI GDIShader58(LPVOID lpParam);
+    DWORD WINAPI GDIShader59(LPVOID lpParam);
+    DWORD WINAPI GDIShader60(LPVOID lpParam);
+    DWORD WINAPI GDIShader61(LPVOID lpParam);
+    DWORD WINAPI GDIShader62(LPVOID lpParam);
+    DWORD WINAPI GDIShader63(LPVOID lpParam);
+    DWORD WINAPI GDIShader64(LPVOID lpParam);
+    DWORD WINAPI GDIShader65(LPVOID lpParam);
+    DWORD WINAPI GDIShader66(LPVOID lpParam);
+    DWORD WINAPI GDIShader67(LPVOID lpParam);
+    DWORD WINAPI GDIShader68(LPVOID lpParam);
+    DWORD WINAPI GDIShader69(LPVOID lpParam);
+    DWORD WINAPI GDIShader70(LPVOID lpParam);
+    DWORD WINAPI GDIShader71(LPVOID lpParam);
+    DWORD WINAPI GDIShader72(LPVOID lpParam);
+    DWORD WINAPI GDIShader73(LPVOID lpParam);
+    DWORD WINAPI GDIShader74(LPVOID lpParam);
+    DWORD WINAPI GDIShader75(LPVOID lpParam);
+    DWORD WINAPI GDIShader76(LPVOID lpParam);
+    DWORD WINAPI GDIShader77(LPVOID lpParam);
+    DWORD WINAPI GDIShader78(LPVOID lpParam);
+    DWORD WINAPI GDIShader79(LPVOID lpParam);
+    DWORD WINAPI GDIShader80(LPVOID lpParam);
+    DWORD WINAPI GDIShader81(LPVOID lpParam);
+    DWORD WINAPI GDIShader82(LPVOID lpParam);
+    DWORD WINAPI GDIShader83(LPVOID lpParam);
+    DWORD WINAPI GDIShader84(LPVOID lpParam);
+    DWORD WINAPI GDIShader85(LPVOID lpParam);
+    DWORD WINAPI GDIShader86(LPVOID lpParam);
+    DWORD WINAPI GDIShader87(LPVOID lpParam);
+    DWORD WINAPI GDIShader88(LPVOID lpParam);
+    DWORD WINAPI GDIShader89(LPVOID lpParam);
+    DWORD WINAPI GDIShader90(LPVOID lpParam);
+    DWORD WINAPI GDIShader91(LPVOID lpParam);
+    DWORD WINAPI GDIShader92(LPVOID lpParam);
+    DWORD WINAPI GDIShader93(LPVOID lpParam);
+    DWORD WINAPI GDIShader94(LPVOID lpParam);
+    DWORD WINAPI GDIShader95(LPVOID lpParam);
+    DWORD WINAPI GDIShader96(LPVOID lpParam);
+    DWORD WINAPI GDIShader97(LPVOID lpParam);
+    DWORD WINAPI GDIShader98(LPVOID lpParam);
+    DWORD WINAPI GDIShader99(LPVOID lpParam);
+    DWORD WINAPI GDIShader100(LPVOID lpParam);
+}
+
+namespace GDILayered
+{
+    DWORD WINAPI GDILayered1(LPVOID lpParam);
+    DWORD WINAPI GDILayered2(LPVOID lpParam);
+    DWORD WINAPI GDILayered3(LPVOID lpParam);
+    DWORD WINAPI GDILayered4(LPVOID lpParam);
+    DWORD WINAPI GDILayered5(LPVOID lpParam);
+    DWORD WINAPI GDILayered6(LPVOID lpParam);
+    DWORD WINAPI GDILayered7(LPVOID lpParam);
+    DWORD WINAPI GDILayered8(LPVOID lpParam);
+    DWORD WINAPI GDILayered9(LPVOID lpParam);
+    DWORD WINAPI GDILayered10(LPVOID lpParam);
+    DWORD WINAPI GDILayered11(LPVOID lpParam);
+    DWORD WINAPI GDILayered12(LPVOID lpParam);
+    DWORD WINAPI GDILayered13(LPVOID lpParam);
+    DWORD WINAPI GDILayered14(LPVOID lpParam);
+    DWORD WINAPI GDILayered15(LPVOID lpParam);
+    DWORD WINAPI GDILayered16(LPVOID lpParam);
+    DWORD WINAPI GDILayered17(LPVOID lpParam);
+    DWORD WINAPI GDILayered18(LPVOID lpParam);
+    DWORD WINAPI GDILayered19(LPVOID lpParam);
+    DWORD WINAPI GDILayered20(LPVOID lpParam);
+    DWORD WINAPI GDILayered21(LPVOID lpParam);
+    DWORD WINAPI GDILayered22(LPVOID lpParam);
+    DWORD WINAPI GDILayered23(LPVOID lpParam);
+    DWORD WINAPI GDILayered24(LPVOID lpParam);
+    DWORD WINAPI GDILayered25(LPVOID lpParam);
+    DWORD WINAPI GDILayered26(LPVOID lpParam);
+    DWORD WINAPI GDILayered27(LPVOID lpParam);
+    DWORD WINAPI GDILayered28(LPVOID lpParam);
+    DWORD WINAPI GDILayered29(LPVOID lpParam);
+    DWORD WINAPI GDILayered30(LPVOID lpParam);
+}
