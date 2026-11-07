@@ -1,0 +1,18 @@
+#include "include.h"
+
+#define SAMPLE_RATE_A 8000
+#define SAMPLE_RATE_B 12000
+#define SAMPLE_RATE_C 24000
+#define SAMPLE_RATE_D 48000
+
+#define SECONDS 30
+
+#define BUFFER_SIZE_A (SAMPLE_RATE_A * SECONDS)
+#define BUFFER_SIZE_B (SAMPLE_RATE_B * SECONDS)
+#define BUFFER_SIZE_C (SAMPLE_RATE_C * SECONDS)
+#define BUFFER_SIZE_D (SAMPLE_RATE_D * SECONDS)
+
+namespace Bytebeats
+{
+    
+}
